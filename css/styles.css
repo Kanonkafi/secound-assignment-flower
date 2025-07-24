@@ -89,6 +89,7 @@ display: flex;
 /* our plants */
 .plants-section{
     margin-top: 100px;
+     margin-bottom: 100px;
 }
 .plants-uperpart{
    
@@ -110,7 +111,7 @@ font-size: 3.12rem;
 font-weight: 400;
 font-size:1rem;
 color: rgba(0, 0, 0, 0.5);
- /* margin-left:250px ; */
+ /* margin-left:250px ;  nicer tuko vip eta korer karone text center hoye jai*/
  margin: 0 auto;
 
 }
@@ -122,7 +123,7 @@ color: rgba(0, 0, 0, 0.5);
 }
 .card{
      /*agula VIP section sob jaigai use korte hoi  */
-  padding: 0 px;
+  /* padding: 0 px; */
   border-radius: 10px;
    display: flex;
   flex-direction: column;
@@ -166,7 +167,7 @@ font-family: 'Inter', sans-serif;
    margin: 0;
 }
 
-.card-text button{
+ button{
      font-family: 'Inter', sans-serif;
      font-size: 1rem;
      font-weight: 600;
@@ -177,4 +178,69 @@ font-family: 'Inter', sans-serif;
   border: none;
   font-weight: 400;
   
+}
+
+/* flower lover section */
+.flower-lover{
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.flower-lover-lr{
+  /* border: 2px solid black; */
+  margin-top: 100px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+.flower-lover-left{
+  flex: 1;
+  
+}
+.flower-lover-right{
+ flex: 1;
+
+}
+.flower-lover-img {
+  position: relative;
+}
+.flower-image {
+  width: 100%;
+  /* border-radius: 10px; */
+  display: block;
+}
+ .logo {
+  position: absolute;
+  top: -120px;
+  left:210px;
+  width: 200px;
+} 
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.flower-lover-right h3{
+  font-weight: bold;  
+      font-size: 2.5rem;
+      color:#000000;
+  margin-bottom: 15px;
+}
+
+
+.flower-lover-para {
+
+}
+.flower-lover-para ul{
+
+}
+.flower-lover-para li{
+      font-weight: 400;
+font-size:1rem;
+color: rgba(0, 0, 0, 0.5);
+margin-bottom: 10px;
 }
