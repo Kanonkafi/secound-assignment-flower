@@ -280,17 +280,17 @@ color: rgba(0, 0, 0, 0.5);
     }
 
     .deal-card {
-      Background-size: cover;
-      Background-position: center;
-      Height: 200px;
+      background-size: cover;
+      background-position: center;
+      height: 200px;
       
-      Border-radius: 10px;
-      Display: flex;
-     Align-items: center;
-      Justify-content: center;
-      Color: white;
-      Font-size: 1.25rem;
-      Font-weight: bold;
+      border-radius: 10px;
+      display: flex;
+     align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.25rem;
+      font-weight: bold;
       font-family: 'Noto Serif', serif;
     }
     .deal-card a{
@@ -432,5 +432,219 @@ color: rgba(0, 0, 0, 0.5);
   transform: scale(1.2);
 }
 
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  
+  .nav-links li:nth-child(4) {
+    display: inline-block;
+  }
+   .nav-links li:nth-child(1),
+  .nav-links li:nth-child(2),
+  .nav-links li:nth-child(3) {
+    display: none;
+  }
+
+ 
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .banner {
+  flex-direction: column-reverse;
+  fl
+  text-align: left;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.banner-left h1 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.banner-left p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.banner-right img {
+  width: 100%;
+  height: auto;
+}
+/* plants section */
+ .plants-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .plants-text h2 {
+    font-size: 2rem;
+  }
+
+  .plants-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .Plants-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
 
 
+/* flower lover */
+.flower-lover-lr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flower-lover-left,
+  .flower-lover-right {
+    width: 100%;
+  }
+
+  .flower-lover-img {
+    order: -1; 
+  }
+
+  .flower-lover-right h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-inline-start: 0;
+  }
+
+  .flower-lover-para {
+    text-align: left;
+  }
+
+  .logo {
+    display: none !important; 
+  }
+  /* latest deal */
+    .latest-deal-text {
+  text-align: center;
+}
+
+.deals-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.deal-card,
+.zabo-card {
+  height: 200px;
+}
+/* join us section */
+  .join-section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .join-section h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .email-subscribe {
+    display: flex;
+    flex-direction: row; 
+    
+    width: 100%;
+   
+  }
+
+  .email-subscribe input[type="email"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+   
+    outline: none;
+  }
+
+  .email-subscribe button {
+    flex: 1;
+    padding: 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    
+  }
+  /* footer section */
+   .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  /* Paragraph styling (already good) */
+  .footer-col p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Footer links in one vertical column */
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col ul li {
+    list-style: none;
+  }
+
+  .footer-col ul li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Social icons below link list, horizontally */
+  .footer-col.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-top: 10px;
+  }
+
+  .footer-col.social a img {
+    width: 24px;
+    height: 24px;
+  }
+
+}
